@@ -1,1 +1,6 @@
-{"transformers": "."}
+{
+  "transformers": {
+    "name": ".",
+    "options": {"plugins": ["@svgr/plugin-svgo", "@svgr/plugin-jsx"]}
+  }
+}

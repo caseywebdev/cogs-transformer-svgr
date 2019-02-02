@@ -1,6 +1,6 @@
 {
   "name": "cogs-transformer-svgr",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Casey Foster <c@sey.me>",
   "description": "An svgr transformer for Cogs.",
   "license": "MIT",
@@ -9,10 +9,12 @@
     "url": "https://github.com/caseywebdev/cogs-transformer-svgr"
   },
   "dependencies": {
-    "@svgr/core": "2"
+    "@svgr/core": "4"
   },
   "devDependencies": {
-    "cogs-test-helper": "3"
+    "cogs-test-helper": "3",
+    "@svgr/plugin-jsx": "4",
+    "@svgr/plugin-svgo": "4"
   },
   "scripts": {
     "test": "cogs-test-helper test/test.js"
