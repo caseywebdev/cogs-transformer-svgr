@@ -1,5 +1,5 @@
-import React from "react";
-
-const SvgInput = props => <svg {...props}><path d="M10 10h100v100H10z" /></svg>;
+function SvgInput(props) {
+  return <svg {...props}><path d="M10 10h100v100H10z" /></svg>;
+}
 
 export default SvgInput;
