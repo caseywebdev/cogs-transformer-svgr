@@ -1,14 +1,9 @@
-import { default as svgr } from '@svgr/core';
+import { transform } from '@svgr/core';
 
 export default async ({ file: { buffer, path }, options }) => {
   try {
     return {
-      buffer: Buffer.from(
-        (await svgr.default(buffer, options, { filePath: path })).replace(
-          /import \* as React from "react";\n+/m,
-          ''
-        )
-      )
+      buffer: Buffer.from(await transform(buffer, options, { filePath: path }))
     };
   } catch (er) {
     throw er instanceof Error ? er : new Error(er);
